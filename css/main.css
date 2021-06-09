@@ -51,6 +51,57 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+/* Fonts */
+
+@font-face {
+  font-family: "logo";
+  src: url("../fonts/Logo.otf");
+}
+/* Header */
+.header{
+  background-color: grey;
+  width: 100%;
+}
+.header__body {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__body .logo h1{
+  font-size: 40px;
+  font-family: logo;
+  color: #fff;
+  text-shadow: #000 1px 1px 2px;
+}
+.header__body .logo h1 span{
+  color: #000; 
+}
+.header__body .info p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header__body .contact ul{
+  display: flex;
+}
+.header__body .contact ul li{
+  font-size: 20px;
+  margin-right: 50px;
+}
+.header__body .contact ul li:last-child{
+  margin-right: 0px;
+}
+.header__body .contact ul li a{
+  padding-left: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  vertical-align: text-top;
+}
+
 
 /* Main */
 .trucks{
