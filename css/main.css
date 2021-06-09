@@ -53,7 +53,6 @@ body{
 }
 
 /* Main */
-
 .trucks{
     display: flex;
     justify-content: center;
@@ -68,6 +67,10 @@ body{
     overflow: hidden;
     padding: 0 15px;
     box-shadow: 15px 15px 15px rgb(0 0 0 / 25%);
+    transition: all linear 0.15s;
+} 
+.trucks .card.hover{    
+    box-shadow: 15px 15px 15px rgb(0 0 0 / 40%);
 } 
 .trucks .card h1{
     font-size: 21px;
@@ -76,15 +79,16 @@ body{
     padding: 10px 0 ;  
     transition: all linear 0.15s;
 }
-.trucks .card h1:hover{
+.trucks .card h1.hover{
     color: #fff;
+    padding-left: 20px;
 }
 .trucks .card img{
     width: 100% ;
     height: auto;
     transition: all linear 0.15s;
 }
-.trucks .card img:hover{
+.trucks .card img.hover{
   transform: scale(1.02);
 }
 
