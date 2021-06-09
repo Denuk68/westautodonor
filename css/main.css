@@ -63,13 +63,14 @@ body{
   width: 100%;
 }
 .header__body {
-  height: 100px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 .header__body .logo h1{
+  padding-top: 10px;
   font-size: 40px;
   font-family: logo;
   color: #fff;
@@ -84,12 +85,16 @@ body{
   color: #fff;
   text-transform: uppercase;
 }
+.header__body .contact{
+  padding: 10px 0;
+}
 .header__body .contact ul{
   display: flex;
 }
 .header__body .contact ul li{
   font-size: 20px;
   margin-right: 50px;
+  position: relative;
 }
 .header__body .contact ul li:last-child{
   margin-right: 0px;
@@ -103,7 +108,11 @@ body{
 }
 
 
+
 /* Main */
+.section__info{
+  background-image: url(../img/bginfo.png);
+}
 .trucks{
     display: flex;
     justify-content: center;
@@ -162,6 +171,28 @@ body{
       max-width: none;
       padding: 0;
     } 
+
+    /* Header */
+    .header__body{
+      height: 180px;
+    }    
+    .header__body .logo h1{
+      font-size: 32px;
+    }
+    .header__body .contact ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header__body .contact ul li{
+      margin-right: 0;
+    }
+    .header__body .contact ul li:first-child{
+      padding-bottom:10px;
+    }
+    .header__body .contact ul li:last-child{
+      padding-top: 5px;
+    }
 }
     
   @media (max-width: 575px) {
