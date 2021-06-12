@@ -51,12 +51,15 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
-/* Fonts */
 
+
+/* Fonts */
 @font-face {
   font-family: "logo";
   src: url("../fonts/Logo.otf");
 }
+
+
 /* Header */
 .header{
   background-color: grey;
@@ -113,9 +116,24 @@ body{
 
 
 /* Main */
-.section__info{
+/* Section Header */
+.section__header{
   background-image: url(../img/bginfo.png);
+  padding: 0 15px;
 }
+.section__header .wrapper{
+  padding: 10px 0;
+}
+.section__header .wrapper p{
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: justify;
+}
+.section__header .wrapper span{
+  color: rgb(14, 14, 14);
+  font-weight: bold;
+}
+/* Section trucks */
 .trucks{
     display: flex;
     justify-content: center;
@@ -154,6 +172,20 @@ body{
 .trucks .card img.hover{
   transform: scale(1.02);
 }
+/* Section info */
+.section__info{
+  background-image: url(../img/bginfo.png);
+  padding: 0 15px;
+}
+.section__info .wrapper{
+  padding: 10px 0;
+}
+.section__info .wrapper p{
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: justify;
+}
+
 
 
 /* Media requests */
