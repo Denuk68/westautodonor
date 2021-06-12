@@ -116,47 +116,7 @@ body{
 
 
 /* Main */
-/* Arrow */
-.arrow,
-.arrow:before{  
-  position: absolute;
-  left: 50%;
-}
-.arrow{
-  width: 30px;
-  height: 30px;
-  bottom: 12%;
-  margin: -20px 0 0 -20px;
-  -webkit-transform: rotate(45deg);
-  border-left: none;
-  border-top: none;
-  border-right: 3px #000 solid;
-  border-bottom:3px #000 solid;
-}
-.arrow:before{
-  content: '';
-  width: 20px;
-  height: 20px;
-  top: 50%;
-  margin: -10px 0 0 -10px;
-  border-left: none;
-  border-top: none;
-  border-right: 2px #000 solid;
-  border-bottom: 2px #000 solid;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-name: arrow;
-}  
-@keyframes arrow{
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    transform: translate(-10px, -10px);
-  }
-}
-  
+
 /* Section Header */
 .section__header{
   position: relative;
@@ -175,6 +135,46 @@ body{
   color: rgb(14, 14, 14);
   font-weight: bold;
 }
+.section__header .arrow,
+.arrow:before{  
+  position: absolute;
+  left: 50%;
+}
+.section__header .arrow{
+  width: 30px;
+  height: 30px;
+  bottom: 12%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 3px #000 solid;
+  border-bottom:3px #000 solid;
+}
+.section__header .arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow__header;
+}  
+@keyframes arrow__header{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
 /* Section trucks */
 .trucks{
     display: flex;
