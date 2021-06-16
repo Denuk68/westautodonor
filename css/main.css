@@ -114,9 +114,106 @@ body{
 }
 
 
+/* Navigation */
+.navigation{
+  background-image: url(../img/bginfo.png);
+}
+.wrapper__navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.wrapper__navigation a {  
+  position: relative;
+  font-size: 20px;  
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+.wrapper__navigation a:after {  
+  content: "";  
+  position: absolute;  
+  right: 0;
+  bottom: -3px;
+  display: block;  
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s;
+  }
+ .wrapper__navigation a:hover:after {   
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s;
+ }
+ .wrapper__navigation a.active:after{  
+  display: block;
+  width: 100%;
+}
+.wrapper__navigation img{
+  padding: 0 5px;
+  width: 12px;
+  height: auto;
+}
 
-/* Main */
+/* Category */
+.wrapper__category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item__category{
+  background-color: grey;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 0 15px ;
+  box-shadow: 15px 15px 15px rgb(0 0 0 / 25%);
+  cursor: pointer;
+  transition: all linear 0.15s;
+}
+.item__category.hover{    
+  box-shadow: 15px 15px 15px rgb(0 0 0 / 40%);
+} 
+.item__category h1{
+  font-size: 21px;
+  font-weight: bold;
+  color: #ececec;
+  padding: 10px 0;  
+  transition: all linear 0.15s;
+}
+.item__category h1.hover{
+  color: #fff;
+  padding-left: 20px;
+}
+.item__category .wrapper__img{
+  background-color: #fff;
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item__category .wrapper__img img{
+  width: 100%;
+  height: auto;
+  transition: all linear 0.15s;
+}
+.item__category .wrapper__img img.hover{
+  transform: scale(1.02);
+}
 
+
+/* Index Page */
 /* Section Header */
 .section__header{
   position: relative;
@@ -174,7 +271,6 @@ body{
     transform: translate(-10px, -10px);
   }
 }
-
 /* Section trucks */
 .trucks{
     display: flex;
@@ -187,7 +283,6 @@ body{
     margin: 10px;
     background-color: grey;
     cursor: pointer;
-    overflow: hidden;
     padding: 0 15px;
     box-shadow: 15px 15px 15px rgb(0 0 0 / 25%);
     transition: all linear 0.15s;
@@ -227,6 +322,7 @@ body{
   padding: 10px 0;
   text-align: justify;
 }
+/* End Index Page */
 
 
 
