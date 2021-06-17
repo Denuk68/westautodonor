@@ -116,7 +116,7 @@ body{
 
 /* Navigation */
 .navigation{
-  background-image: url(../img/bginfo.png);
+  background-image: url(../img/bg.png);
 }
 .wrapper__navigation{
   display: flex;
@@ -217,7 +217,7 @@ body{
 /* Section Header */
 .section__header{
   position: relative;
-  background-image: url(../img/bginfo.png);
+  background-image: url(../img/bg.png);
   padding: 0 15px;
 }
 .section__header .wrapper{
@@ -311,7 +311,7 @@ body{
 }
 /* Section info */
 .section__info{
-  background-image: url(../img/bginfo.png);
+  background-image: url(../img/bg.png);
   padding: 0 15px;
 }
 .section__info .wrapper{
