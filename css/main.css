@@ -211,7 +211,26 @@ body{
 .item__category .wrapper__img img.hover{
   transform: scale(1.02);
 }
-
+/* Arrow Up */
+#arrow__up{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: grey;
+  visibility: hidden;
+  cursor: pointer;
+}
+#arrow__up img{
+ width: 30px;
+ height: auto;
+ transform: rotate(-90deg);
+}
 
 /* Index Page */
 /* Section Header */
@@ -326,6 +345,7 @@ body{
 
 
 
+
 /* Media requests */
 @media (max-width: 1200px) {
     .container {
@@ -343,8 +363,12 @@ body{
     .container {
       max-width: none;
       padding: 0;
-    } 
-
+    }    
+    /* Arrow up */
+    #arrow__up{
+      visibility: visible;
+      opacity: 0.8;
+    }
     /* Header */
     .header__body{
       height: 180px;
