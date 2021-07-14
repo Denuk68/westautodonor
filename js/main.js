@@ -38,6 +38,23 @@ for (let i = 0; i < category.length; i++) {
     })
 };
 
+// Products hover effect
+let products = document.querySelectorAll(".item__products");
+let products_img = document.querySelectorAll(".item__products .wrapper__img img");
+
+for (let i = 0; i < products.length; i++) {
+    products[i].addEventListener('mouseenter', function () {
+        products[i].classList.add('hover');
+        products_img[i].classList.add('hover');
+    })
+};
+for (let i = 0; i <  products.length; i++) {
+    products[i].addEventListener('mouseleave', function () {
+        products[i].classList.remove('hover');
+        products_img[i].classList.remove('hover');
+    })
+};
+
 // Scroll 
 $(function(){
     $.fn.scrollToTop=function(){
