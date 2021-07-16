@@ -148,11 +148,12 @@ body{
 .navigation{
   background-image: url(../img/bg.png);
 }
-.wrapper__navigation{
+.wrapper__navigation {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 80px;
+  flex-wrap: wrap;
 }
 .wrapper__navigation a {  
   position: relative;
