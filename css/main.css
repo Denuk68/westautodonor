@@ -332,13 +332,13 @@ body{
 /* Arrow Up */
 #arrow__up{
   position: fixed;
-  bottom: 80px;
-  right: 0;
+  bottom: 20px;
+  left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   background-color: grey;
   visibility: hidden;
@@ -477,7 +477,7 @@ body{
     } 
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .container {
       max-width: none;
       padding: 0;
@@ -515,4 +515,7 @@ body{
 }
     
   @media (max-width: 575px) {
+    .item__products{
+      width: 300px;      
+    }
   }
